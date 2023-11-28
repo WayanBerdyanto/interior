@@ -1,0 +1,47 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+nav{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .navbar-logo{
+    font-size: 1rem;
+}
+
+nav .navbar-list ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav .navbar-list ul li a{
+    color: gray;
+    margin: 0px 1rem;
+    text-decoration: none;
+}
+
+nav .navbar-form form .form-group{
+    padding: 0.2rem;
+    padding-right: 0.6rem;
+    display: flex;
+    align-items: center;
+
+}
+
+nav .navbar-form form .form-group input{
+    border: solid 1px #0000008c;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+}
