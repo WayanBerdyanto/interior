@@ -1,12 +1,25 @@
+:root{
+    --primary: #141311;
+    --secondary: #e9ebea;
+    --bg: #cecfd1;
+}
 *{
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
-    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary);
+    background-color: var(--bg);
 }
 
 nav{
@@ -20,28 +33,26 @@ nav .navbar-logo{
     font-size: 1rem;
 }
 
-nav .navbar-list ul{
-    display: flex;
-    list-style-type: none;
-}
-
-nav .navbar-list ul li a{
-    color: gray;
+nav .navbar-list a{
+    color: var(--primary) ;
     margin: 0px 1rem;
     text-decoration: none;
 }
 
-nav .navbar-form form .form-group{
-    padding: 0.2rem;
-    padding-right: 0.6rem;
+nav .navbar-form{
     display: flex;
     align-items: center;
-
 }
 
-nav .navbar-form form .form-group input{
-    border: solid 1px #0000008c;
-    border-radius: 0.5rem;
-    padding: 0.2rem;
-    margin-right: 0.5rem;
+nav .navbar-form a{
+    color: var(--text) ;
+    margin:0px 1rem;
+}
+
+nav .navbar-form form input{
+    border: solid 1px var(--primary);
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+    margin-right: 0.1rem;
+    border: none;
 }
