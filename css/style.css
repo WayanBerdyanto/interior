@@ -25,12 +25,25 @@ body{
 .navbar{
     padding: 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #884A39;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 .navbar .navbar-logo{
-    font-size: 1rem;
+    display: flex;
+}
+
+.navbar .navbar-logo img{
+    width: 5rem;
+    display: flex;
 }
 
 .navbar .navbar-list a{
@@ -63,7 +76,7 @@ body{
 
 /* Start Hero Section */
 .hero{
-    background-image: url(../image/bg-hero-interior.jpg);
+    background-image: url(../image/bg-hero.jpg);
     min-height: 100vh;
     display: flex;
     align-items: center;
