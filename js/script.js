@@ -10,3 +10,9 @@ document.addEventListener("click", function(e){
         navbarList.classList.remove("active")
     }
 });
+
+const inputForm = document.querySelector(".input-form");
+
+document.querySelector("#search").onclick = () => {
+    inputForm.classList.toggle("active-form")
+}
