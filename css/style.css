@@ -130,3 +130,62 @@ body {
 
 }
 /* End Hero Section */
+
+
+/* MEDIA QUERIES */
+/* LAPTOP */
+@media(max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    html {
+      font-size: 62.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+
+    .navbar .navbar-list{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--secondary);
+        width: 25rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-list.active{
+        right: 0;
+    }
+
+    .navbar .navbar-list a{
+        color: var(--primary);
+        display: block;
+        margin: 2rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-list a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-list a:hover::after{
+        transform: scaleX(0.2);
+    }
+
+
+}
+
+/* MOBILE PHONE */
+@media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+  }
