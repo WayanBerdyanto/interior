@@ -29,6 +29,7 @@ document.querySelector("#search").onclick = () => {
 // Animasi Scrool
 document.addEventListener('DOMContentLoaded', function() {
   var animatedSection = document.querySelector('.about');
+  var animatedSectionGalery = document.querySelector('.galery');
 
   function fadeInOnScroll() {
       var scrollPosition = window.scrollY;
@@ -40,6 +41,18 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   }
 
+  function fadeInOnScrollGalery() {
+    var scrollPosition = window.scrollY;
+    var sectionPosition = animatedSectionGalery.offsetTop;
+
+    if (scrollPosition >= sectionPosition - window.innerHeight / 2) {
+      animatedSectionGalery.style.opacity = 1;
+      animatedSectionGalery.style.transform = 'translateX(0)';
+    }
+}
+
   window.addEventListener('scroll', fadeInOnScroll);
+  window.addEventListener('scroll', fadeInOnScrollGalery);
   fadeInOnScroll();
+  fadeInOnScrollGalery();
 });
