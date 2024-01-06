@@ -25,3 +25,21 @@ document.querySelector("#search").onclick = () => {
     icon.classList.add("fa-magnifying-glass");
   }
 };
+
+// Animasi Scrool
+document.addEventListener('DOMContentLoaded', function() {
+  var animatedSection = document.querySelector('.about');
+
+  function fadeInOnScroll() {
+      var scrollPosition = window.scrollY;
+      var sectionPosition = animatedSection.offsetTop;
+
+      if (scrollPosition >= sectionPosition - window.innerHeight / 2) {
+          animatedSection.style.opacity = 1;
+          animatedSection.style.transform = 'translateX(0)';
+      }
+  }
+
+  window.addEventListener('scroll', fadeInOnScroll);
+  fadeInOnScroll();
+});
