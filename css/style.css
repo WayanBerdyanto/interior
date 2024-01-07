@@ -213,7 +213,8 @@ body {
   margin-bottom: 3rem;
 }
 
-.about h2 span {
+.about h2 span,
+.galery h2 span {
   color: var(--brown);
 }
 
@@ -252,6 +253,15 @@ body {
   opacity: 0;
   transform: translateX(30px);
   transition: opacity 1s ease, transform 1s ease;
+}
+
+.galery p{
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin-bottom: 2.8rem;
+  text-align: left;
+  margin-top: -2rem;
+  font-weight: 100;
 }
 
 .galery .row {
