@@ -453,6 +453,48 @@ body {
   background-color: #783d2d;
 }
 /* End Contact */
+
+/* Start Footer */
+footer{
+  margin-top: 3rem;
+  background-color: var(--brown);
+  padding: 2rem 7%;
+  width: 100%;
+}
+
+footer .links,
+footer .social-links{
+  display: flex;
+  justify-content: center;
+}
+
+footer .links a,
+footer .social-links a{
+  margin: 0 2rem 2rem 0;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+footer .links a:hover{
+  transition: 0.3s;
+  color: var(--primary);
+}
+
+footer .social-links a i{
+  font-size: 1.4rem;
+}
+
+footer .social-links a i:hover{
+  transition: 0.3s;
+  color: var(--primary);
+}
+
+
+footer span{
+  display: flex;
+  justify-content: center;
+}
+/* End Footer */
 /* MEDIA QUERIES */
 /* LAPTOP */
 @media (max-width: 1366px) {
