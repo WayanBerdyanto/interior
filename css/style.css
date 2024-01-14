@@ -223,8 +223,7 @@ body {
 }
 
 .about .row,
-.blog .row,
-.galery .row{
+.blog .row{
   display: flex;
 }
 
@@ -261,6 +260,13 @@ body {
   opacity: 0;
   transform: translateX(30px);
   transition: opacity 1s ease, transform 1s ease;
+}
+
+.galery .row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
 }
 
 .galery p,
